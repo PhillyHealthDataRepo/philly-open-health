@@ -34,3 +34,6 @@ end
 
 
 gem 'rails_admin'
+
+
+gem "devise"
