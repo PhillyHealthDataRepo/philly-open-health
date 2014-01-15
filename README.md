@@ -29,6 +29,10 @@ Create the following models:
     description
     publication_date
     collection_date
+    added_by -> user
+    tags (has_many)
+    files (has_many)
+    
     
 Configure paperclip to use an uploader to attach a document to DataSet
 
