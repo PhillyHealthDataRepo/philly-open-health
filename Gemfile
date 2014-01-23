@@ -32,6 +32,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'paperclip', '~> 3.1'
 
 gem 'rails_admin'
 
