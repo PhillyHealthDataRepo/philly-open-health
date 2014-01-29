@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140114022635) do
+ActiveRecord::Schema.define(version: 20140129010916) do
 
   create_table "data_sets", force: true do |t|
     t.string   "source"
@@ -25,6 +25,19 @@ ActiveRecord::Schema.define(version: 20140114022635) do
     t.string   "document_content_type"
     t.integer  "document_file_size"
     t.datetime "document_updated_at"
+  end
+
+  create_table "documents", force: true do |t|
+    t.string   "name"
+    t.string   "source"
+    t.date     "publicationdate"
+    t.text     "tags"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "doc_file_name"
+    t.string   "doc_content_type"
+    t.integer  "doc_file_size"
+    t.datetime "doc_updated_at"
   end
 
   create_table "sources", force: true do |t|
