@@ -1,6 +1,3 @@
-As of Jan 30 2014, these requirements have NOT been vetted by Briana
-
-
 What is this?
 =======
 
