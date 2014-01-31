@@ -17,7 +17,7 @@ Data Sets
 **Note on nomenclature**
 Informally, we often refer to "documents" - PDFs, Excel sheets, etc. However, as we do actual development, we should keep in mind that our atomic unit of information is not a "document" but a _Data Set_ - a collection of statistics or other information. A given Data Set may be split among multiple files: for example, HealthSurvey2013-part1.csv, HealthSurvey2013-part2.csv, etc. Whenever possible, we should try to refer to _Data Sets_ and _Files_ instead of _Documents_, since that's more ambiguous and might refer to either one. (This isn't hypothetical; this ambiguity has already caused actual problems.)
 
-**Data Sets** have the following metadata:
+**Data Sets** have the following attributes:
 * Title
 * Description - Freeform text
 * Data Source - The organization that the information comes from
