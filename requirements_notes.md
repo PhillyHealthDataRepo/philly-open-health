@@ -11,12 +11,11 @@ A Note on Formality
 I've tried to be unambiguous but informal in these requirements. If you're used to reading more formal requirements documents where, for example, "shall" and "will" mean very specific things, please ignore those conventions. That said, we hope there is no actual *ambiguity* in what's needed; if anything is unclear to the point that you can't proceed with development, please feel free to contact Ben or Briana and we can get it hammered out.
 
 
-
 Data Sets
 =====
 
 **Note on nomenclature**
-Informally, we often refer to "documents" - PDFs, Excel sheets, etc. However, in more formal contexts, we should keep in mind that our atomic unit of information is not a "document" but a _Data Set_ - a collection of statistics or other information. A given Data Set may be split among multiple files: for example, HealthSurvey2013-part1.csv, HealthSurvey2013-part2.csv, etc. Whenever possible, we should try to refer to _Data Sets_ and _Files_ instead of _Documents_, since that's more ambiguous and might refer to either one. (This isn't hypothetical; this ambiguity has already caused actual problems.)
+Informally, we often refer to "documents" - PDFs, Excel sheets, etc. However, as we do actual development, we should keep in mind that our atomic unit of information is not a "document" but a _Data Set_ - a collection of statistics or other information. A given Data Set may be split among multiple files: for example, HealthSurvey2013-part1.csv, HealthSurvey2013-part2.csv, etc. Whenever possible, we should try to refer to _Data Sets_ and _Files_ instead of _Documents_, since that's more ambiguous and might refer to either one. (This isn't hypothetical; this ambiguity has already caused actual problems.)
 
 **Data Sets** have the following metadata:
 * Title
@@ -43,11 +42,11 @@ A suggested Tag list will be presented, and the user can click on tags to add th
 Data Set Availability
 ------
 
-Data Sets should be available at fixed, reasonbly-brief URLs. These not be friendly text, but HIVPhilly staff must be able to refer to, eg, "hivphilly.org/datarepo/datasets/3195". (The preceding is an example and not an actual or required URL path format)
+Data Sets should be available at fixed, reasonbly-brief URLs. These need not include a title, but HIVPhilly staff must be able to refer to, eg, "hivphilly.org/datarepo/datasets/3195". (The preceding is an example and not an actual or required URL path format)
 
 Tags
 ====
-Should we call these "categories?"
+Question: Should we call these "categories?"
 
 Data Sources
 ======
@@ -62,9 +61,10 @@ User Accounts
 No log-in is required to view or access any data sets. However, user accounts are required for creating new entries & uploading files. There will be no "Register" button - all user accounts must be created by an administrator.
 
 There are three types of users:
-1) The general public - users who do not have an account at all. These users have read-only access to the entire repository of data sets, search functionality, etc.
-2) Trusted Users -  Individuals who have been entrusted with an account to upload & manage data sets. These users are able to upload new data sets and edit metadata or upload new files for data sets they created. However, they have only read-only access to all other data sets.
-3) Administrators - Very limited in number; probably just HIVPhilly staff and trusted developers. These users have edit & delete capabilities for all data sets and files. Administrators also have the ability to register new user accounts.
+
+1. The general public - users who do not have an account at all. These users have read-only access to the entire repository of data sets, search functionality, etc.
+2. Trusted Users -  Individuals who have been entrusted with an account to upload & manage data sets. These users are able to upload new data sets and edit metadata or upload new files for data sets they created. However, they have only read-only access to all other data sets.
+3. Administrators - Very limited in number; probably just HIVPhilly staff and trusted developers. These users have edit & delete capabilities for all data sets and files. Administrators also have the ability to register new user accounts.
 
 User Data
 ------
@@ -88,4 +88,4 @@ QUESTION FOR BRIANA: How precise should dates be? Month-and-year, or do we need 
 Search
 -----
 
-Users will be able to search for data sets. NEED TO WORK OUT THIS IN MORE DEPTH
+Users will be able to search for data sets. NEED TO WORK THIS OUT IN MORE DEPTH
