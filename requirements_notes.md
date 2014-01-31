@@ -4,7 +4,7 @@ As of Jan 30 2014, these requirements have NOT been vetted by Briana
 What is this?
 =======
 
-This document is a first cut of requirements for the Philly Health Data Repo project of Code For Philly, worked out by Ben Novack (ben@manywords.net) as project manager and Brian Morgan (briana.l.morgan@gmail.com) as Subject Matter Expert and "client." This project seeks to provide a web site where the Philadelphia Office of HIV Planning can upload and store public health data, for their own use and in order to provide easier access to this data for third parties.
+This document is a first cut of requirements for the Philly Health Data Repo project of Code For Philly, worked out by Ben Novack (ben@manywords.net) as project manager and Briana Morgan (briana.l.morgan@gmail.com) as Subject Matter Expert and "client." This project seeks to provide a web site where the Philadelphia Office of HIV Planning can upload and store public health data, for their own use and in order to provide easier access to this data for third parties.
 
 A Note on Formality
 ----
@@ -36,13 +36,13 @@ Users (Trusted and Administrators) can upload new data sets. All fields are requ
 
 A warning will be displayed, with background/color to make it stand out, that warns users not to upload ANY data that is not acceptable for public access. Data on the repository is available to the general public and is assumed to have no problems with HIPAA, NDAs, or any other limitations on its publication.
 
-A suggested Tag list will be presented, and the user can click on tags to add them to the list of tags attached to the Data Set. The tag list will be pre-populated with major categories of data drawn from the sections of the HIVPhilly Epi-Profile. 
+A suggested Tag list will be presented, and the user can click on tags to add them to the list of tags attached to the Data Set. The tag list will be pre-populated with major categories of data drawn from the sections of the Office of HIV Planning Epi-Profile. 
 
 
 Data Set Availability
 ------
 
-Data Sets should be available at fixed, reasonbly-brief URLs. These need not include a title, but HIVPhilly staff must be able to refer to, eg, "hivphilly.org/datarepo/datasets/3195". (The preceding is an example and not an actual or required URL path format)
+Data Sets should be available at fixed, reasonbly-brief URLs. These need not include a title, but Office of HIV Planning staff must be able to refer to, eg, "hivphilly.org/datarepo/datasets/3195". (The preceding is an example and not an actual or required URL path format)
 
 Tags
 ====
@@ -50,7 +50,7 @@ Question: Should we call these "categories?"
 
 Data Sources
 ======
-A Data Source is an organization, such as the US Census or HIVPhilly, that originally created a data set. Data Source information is entered by users when uploading new Data Sets. Data Sources have these attributes:
+A Data Source is an organization, such as the US Census or Office of HIV Planning, that originally created a data set. Data Source information is entered by users when uploading new Data Sets. Data Sources have these attributes:
 * Name
 * Description (optional)
 * Homepage URL (optional)
@@ -64,7 +64,7 @@ There are three types of users:
 
 1. The general public - users who do not have an account at all. These users have read-only access to the entire repository of data sets, search functionality, etc.
 2. Trusted Users -  Individuals who have been entrusted with an account to upload & manage data sets. These users are able to upload new data sets and edit metadata or upload new files for data sets they created. However, they have only read-only access to all other data sets.
-3. Administrators - Very limited in number; probably just HIVPhilly staff and trusted developers. These users have edit & delete capabilities for all data sets and files. Administrators also have the ability to register new user accounts.
+3. Administrators - Very limited in number; probably just Office of HIV Planning staff and trusted developers. These users have edit & delete capabilities for all data sets and files. Administrators also have the ability to register new user accounts.
 
 User Data
 ------
