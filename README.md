@@ -7,11 +7,6 @@ Getting Started with Development
 
 **Note** We'll be moving to a better structure for project management soon, but in the meantime, please take a look at the requirements_notes.md in this directory for an overview of our 1.0-release feature goals.
 
-
-License
-======
-The PHDR is an open-source project. Selection of an actual license is on our to-do list for the Feb 6, 2014 Code for Philly meetup.
-
 Start by creating a user. In the terminal type:
 
 ```
