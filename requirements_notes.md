@@ -1,7 +1,10 @@
+As of Feb 6 2014, everything above the "Future possible work" section has been vetted by OHP. **PLEASE DO NOT** add anything to this file on your own without clearly marking it with *Not Yet Checked by OHP*. Brainstorming and new ideas are awesome, but we need to distinguish them from things that developers can just grab and run with.
+
+
 What is this?
 =======
 
-This document is a first cut of requirements for the Philly Health Data Repo project of Code For Philly, worked out by Ben Novack (ben@manywords.net) as project manager and Briana Morgan (briana.l.morgan@gmail.com) as Subject Matter Expert and "client." This project seeks to provide a web site where the Philadelphia Office of HIV Planning can upload and store public health data, for their own use and in order to provide easier access to this data for third parties.
+This document is a first cut of requirements for the Philly Health Data Repo project of Code For Philly, worked out by Ben Novack (ben@manywords.net) as project manager and Briana Morgan (briana.l.morgan@gmail.com) of the Office of HIV Planning (OHP) as Subject Matter Expert and "client." This project seeks to provide a web site where the Philadelphia Office of HIV Planning can upload and store public health data, for their own use and in order to provide easier access to this data for third parties. Further information is available in the README.
 
 A Note on Formality
 ----
@@ -31,7 +34,7 @@ Uploading
 ------
 Users (Trusted and Administrators) can upload new data sets. All fields are required, except Tags, which may be empty. As the Data Source is entered, users will be prompted to select from an existing Data Source; if none is available, the form will expand and the user will be required to enter information about the Data Source (see the section on Data Sources for details on these fields.)
 
-A warning will be displayed, with background/color to make it stand out, that warns users not to upload ANY data that is not acceptable for public access. Data on the repository is available to the general public and is assumed to have no problems with HIPAA, NDAs, or any other limitations on its publication.
+A warning will be displayed, with background/color to make it stand out, that warns users not to upload ANY data that is not acceptable for public access. Data on the repository is available to the general public and is assumed to have no problems with HIPAA, NDAs, or any other limitations on its publication. OHP will provide this text, which will be lawyer-vetted and super-formal. We can stick placeholder text in till it's available, but we should make sure the interface design allows for a length legal warning if neccessary. 
 
 A suggested Tag list will be presented, and the user can click on tags to add them to the list of tags attached to the Data Set. The tag list will be pre-populated with major categories of data drawn from the sections of the Office of HIV Planning Epi-Profile. 
 
@@ -44,6 +47,8 @@ Data Sets should be available at fixed, reasonbly-brief URLs. These need not inc
 Tags
 ====
 Question: Should we call these "categories?"
+
+We might pre-seed the tags with section headers from 
 
 Data Sources
 ======
@@ -80,9 +85,17 @@ Upon validation of the data input by the administrator, an auto-login link will 
 Dates
 ----
 
-QUESTION FOR BRIANA: How precise should dates be? Month-and-year, or do we need days?
+These should be month-and-year - no days needed.
+
+We'll also need to represent date ranges.
 
 Search
 -----
 
 Users will be able to search for data sets. NEED TO WORK THIS OUT IN MORE DEPTH
+
+Brainstorming and Possible Future Work
+======
+Everything in this is *Not Yet Checked by OHP*
+
+* Right now, we're focused on making availble to the general public data that has no restrictions on its access - we specfiically *don't* want anything that has personally-identifiable information that could be traced back to an individual, because that would be HIPAA-violating as all get-out. But! What if we could add sections, limited by user access, that only trusted users (ie, members of the HIV services community?) have access to? We'd probably need to have specific additional limits on user accounts, since we might have public-health community users who aren't cleared for this specific data. 
