@@ -4,7 +4,7 @@ As of Feb 6 2014, everything above the "Future possible work" section has been v
 What is this?
 =======
 
-This document is a first cut of requirements for the Philly Health Data Repo project of Code For Philly, worked out by Ben Novack (ben@manywords.net) as project manager and Briana Morgan (briana.l.morgan@gmail.com) of the Office of HIV Planning (OHP) as Subject Matter Expert and "client." This project seeks to provide a web site where the Philadelphia Office of HIV Planning can upload and store public health data, for their own use and in order to provide easier access to this data for third parties. Further information is available in the README.
+This document is a first cut of requirements - you can think of it as requirements for 1.0 release. for the Philly Health Data Repo project of Code For Philly, worked out by Ben Novack (ben@manywords.net) as project manager and Briana Morgan (briana.l.morgan@gmail.com) of the Office of HIV Planning (OHP) as Subject Matter Expert and "client." This project seeks to provide a web site where the Philadelphia Office of HIV Planning can upload and store public health data, for their own use and in order to provide easier access to this data for third parties. Further information is available in the README.
 
 A Note on Formality
 ----
@@ -99,3 +99,5 @@ Brainstorming and Possible Future Work
 Everything in this is *Not Yet Checked by OHP*
 
 * Right now, we're focused on making availble to the general public data that has no restrictions on its access - we specfiically *don't* want anything that has personally-identifiable information that could be traced back to an individual, because that would be HIPAA-violating as all get-out. But! What if we could add sections, limited by user access, that only trusted users (ie, members of the HIV services community?) have access to? We'd probably need to have specific additional limits on user accounts, since we might have public-health community users who aren't cleared for this specific data. 
+
+* It would be really cool if we could come up with some ways to automate the metadata gathering process - suggest tags?
