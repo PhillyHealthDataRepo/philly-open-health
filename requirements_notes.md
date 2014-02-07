@@ -94,6 +94,15 @@ Search
 
 Users will be able to search for data sets. NEED TO WORK THIS OUT IN MORE DEPTH
 
+Development and Testing To-Do List:
+=======
+* Switch to Postgres from sqlite
+* Set up heroku and start deploying there regularly
+* Get a test data set and seed the test DB with it
+
+Eventually, to deploy For Real, we also need to:
+* Talk to OHP about hosting options - we might be constrained in our deployment strategy based on their needs or resources.
+
 Brainstorming and Possible Future Work
 ======
 Everything in this is *Not Yet Checked by OHP*
