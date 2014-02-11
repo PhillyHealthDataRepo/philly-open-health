@@ -1,4 +1,6 @@
 PhillyOpenHealth::Application.routes.draw do
+  resources :data_sets
+
   resources :tags
 
   resources :sources
