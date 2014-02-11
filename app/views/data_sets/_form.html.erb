@@ -1,0 +1,20 @@
+<%= form_for(@data_set) do |f| %>
+  Source: <%= f.text_field :source %><br />
+
+
+  <% if @data_set.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@data_set.errors.count, "error") %> prohibited this data_set from being saved:</h2>
+
+      <ul>
+      <% @data_set.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

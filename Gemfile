@@ -38,3 +38,5 @@ gem 'rails_admin'
 
 
 gem "devise"
+
+gem "haml-rails"
