@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @data_set.title
+%p
+  %b Description:
+  = @data_set.description
+%p
+  %b Createdate:
+  = @data_set.createdate
+
+= link_to 'Edit', edit_data_set_path(@data_set)
+\|
+= link_to 'Back', data_sets_path
