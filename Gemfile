@@ -14,7 +14,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem 'rails-haml'
+gem 'haml-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
@@ -44,13 +44,11 @@ group :development do
     gem 'sqlite3', '1.3.8'
 end
 
-<<<<<<< HEAD
 group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
-=======
+
 gem "devise"
 
 gem "haml-rails"
->>>>>>> 67672f3a22804cc32b08a9b7fece516b59ad964f
