@@ -21,19 +21,6 @@ ActiveRecord::Schema.define(version: 20140211011106) do
     t.datetime "updated_at"
   end
 
-  create_table "documents", force: true do |t|
-    t.string   "name"
-    t.string   "source"
-    t.date     "publicationdate"
-    t.text     "tags"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "doc_file_name"
-    t.string   "doc_content_type"
-    t.integer  "doc_file_size"
-    t.datetime "doc_updated_at"
-  end
-
   create_table "sources", force: true do |t|
     t.string   "name"
     t.text     "description"
