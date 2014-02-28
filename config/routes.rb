@@ -1,4 +1,8 @@
 PhillyOpenHealth::Application.routes.draw do
+  root 'static_pages#home'
+  
+  get "static_pages/home"
+  get "static_pages/help"
   resources :data_sets
 
   resources :tags
