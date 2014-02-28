@@ -52,3 +52,5 @@ end
 gem "devise"
 
 gem "haml-rails"
+
+gem 'bootstrap-sass', '~> 3.1.1'

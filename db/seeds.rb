@@ -12,3 +12,6 @@
     DataSet.create(title: "Test Document #{n}", description: "Test Doc #{n}", createdate: "2014-2-#{n}")    
 end
 
+10.times do |n|
+   Source.create(name: "Big Organization #{n}", description: "A nonprofit", homepageurl: "http://www.hivphilly.org") 
+end
