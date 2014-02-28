@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @source.name
+%p
+  %b Description:
+  = @source.description
+%p
+  %b Homepageurl:
+  = @source.homepageurl
+
+= link_to 'Edit', edit_source_path(@source)
+\|
+= link_to 'Back', sources_path

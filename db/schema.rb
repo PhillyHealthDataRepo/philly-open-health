@@ -11,26 +11,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140114022635) do
+ActiveRecord::Schema.define(version: 20140211011106) do
 
   create_table "data_sets", force: true do |t|
-    t.string   "source"
-    t.string   "name"
+    t.string   "title"
     t.text     "description"
-    t.date     "publication_date"
-    t.date     "collection_date"
+    t.date     "createdate"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "document_file_name"
-    t.string   "document_content_type"
-    t.integer  "document_file_size"
-    t.datetime "document_updated_at"
+  end
+
+  create_table "documents", force: true do |t|
+    t.string   "name"
+    t.string   "source"
+    t.date     "publicationdate"
+    t.text     "tags"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "doc_file_name"
+    t.string   "doc_content_type"
+    t.integer  "doc_file_size"
+    t.datetime "doc_updated_at"
   end
 
   create_table "sources", force: true do |t|
-    t.string "name"
-    t.string "url"
-    t.string "desc"
+    t.string   "name"
+    t.text     "description"
+    t.string   "homepageurl"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tags", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
