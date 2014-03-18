@@ -34,7 +34,7 @@ Uploading
 ------
 Users (Trusted and Administrators) can upload new data sets. All fields are required, except Tags, which may be empty. As the Data Source is entered, users will be prompted to select from an existing Data Source; if none is available, the form will expand and the user will be required to enter information about the Data Source (see the section on Data Sources for details on these fields.)
 
-A warning will be displayed, with background/color to make it stand out, that warns users not to upload ANY data that is not acceptable for public access. Data on the repository is available to the general public and is assumed to have no problems with HIPAA, NDAs, or any other limitations on its publication. OHP will provide this text, which will be lawyer-vetted and super-formal. We can stick placeholder text in till it's available, but we should make sure the interface design allows for a length legal warning if neccessary. 
+A warning will be displayed, with background/color to make it stand out, that warns users not to upload ANY data that is not acceptable for public access. Data on the repository is available to the general public and is assumed to have no problems with HIPAA, NDAs, or any other limitations on its publication. OHP will provide this text, which will be lawyer-vetted and super-formal. We can stick placeholder text in till it's available, but we should make sure the interface design allows for a lengthy legal warning if neccessary. 
 
 A suggested Tag list will be presented, and the user can click on tags to add them to the list of tags attached to the Data Set. The tag list will be pre-populated with major categories of data drawn from the sections of the Office of HIV Planning Epi-Profile. 
 
@@ -48,7 +48,7 @@ Tags
 ====
 Question: Should we call these "categories?"
 
-We might pre-seed the tags with section headers from 
+We might pre-seed the tags with section headers from the epi profile.
 
 Data Sources
 ======
