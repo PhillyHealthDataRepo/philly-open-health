@@ -8,7 +8,7 @@ This document is a first cut of requirements - you can think of it as requiremen
 
 A Note on Formality
 ----
-We've tried to be unambiguous but informal in these requirements. If you're used to reading more formal requirements documents where, for example, "shall" and "will" mean very specific things, please ignore those conventions. That said, we hope there is no actual *ambiguity* in what's needed; if anything is unclear to the point that you can't proceed with development, please feel free to contact Ben or Briana and we can get it hammered out.
+We've tried to be unambiguous but informal in these requirements. If you're used to reading more formal requirements documents where, for example, "shall" and "will" mean very specific things, please ignore those conventions. That said, we hope there is no actual *ambiguity* in what's needed; if anything is unclear to the point that you can't proceed with development, please contact Ben or Briana and we can get it hammered out.
 
 
 Data Sets
