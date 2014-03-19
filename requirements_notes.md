@@ -4,7 +4,7 @@ As of Feb 6 2014, everything above the "Future possible work" section has been v
 What is this?
 =======
 
-This document is a first cut of requirements - you can think of it as requirements for 1.0 release. for the Philly Health Data Repo project of Code For Philly, worked out by Ben Novack (ben@manywords.net) as project manager and Briana Morgan (briana.l.morgan@gmail.com) of the Office of HIV Planning (OHP) as Subject Matter Expert and "client." This project seeks to provide a web site where the Philadelphia Office of HIV Planning can upload and store public health data, for their own use and in order to provide easier access to this data for third parties. Further information is available in the README.
+This document is a first cut of requirements - you can think of it as requirements for 1.0 release of the Philly Health Data Repo project of Code For Philly, worked out by Ben Novack (ben@manywords.net) as project manager and Briana Morgan (briana.l.morgan@gmail.com) of the Office of HIV Planning (OHP) as Subject Matter Expert and "client." This project seeks to provide a web site where the Philadelphia Office of HIV Planning can upload and store public health data, for their own use and in order to provide easier access to this data for third parties. Further information is available in the README.
 
 A Note on Formality
 ----
@@ -15,7 +15,7 @@ Data Sets
 =====
 
 **Note on nomenclature**
-Informally, we often refer to "documents" - PDFs, Excel sheets, etc. However, as we do actual development, we should keep in mind that our basic unit of information is not a "document" but a _Data Set_ - a collection of statistics or other information. A given Data Set may be split among multiple files: for example, HealthSurvey2013-part1.csv, HealthSurvey2013-part2.csv, etc. Whenever possible, we should try to refer to _Data Sets_ and _Files_ instead of _Documents_, since _Document_ more ambiguous and might refer to either one. (This isn't hypothetical; this ambiguity has already caused actual problems when one person refers to a "Document" meaning a data set, and another person thinks they mean a single .PDF file.)
+Informally, we often refer to "documents" - PDFs, Excel sheets, etc. However, as we do actual development, we should keep in mind that our basic unit of information is not a "document" but a _Data Set_ - a collection of statistics or other information. A given Data Set may be split among multiple files: for example, HealthSurvey2013-part1.csv, HealthSurvey2013-part2.csv, etc. Whenever possible, we should try to refer to _Data Sets_ and _Files_ instead of _Documents_, since _Document_ is more ambiguous and might refer to either one. (This isn't hypothetical; this ambiguity has already caused actual problems when one person refers to a "Document" meaning a data set, and another person thinks they mean a single .PDF file.)
 
 **Data Sets** have the following attributes:
 * Title
@@ -28,7 +28,7 @@ Informally, we often refer to "documents" - PDFs, Excel sheets, etc. However, as
 * Any number of *Tags* to categorize the data.
 * 1 or more *Files*.
 
-For version 1.0, Metadata will be entered manually by the user creating the Data Set entry and uploading the file(s).
+For version 1.0, all of these fields will be entered manually by the user creating the Data Set entry and uploading the file(s).
 
 Uploading
 ------
