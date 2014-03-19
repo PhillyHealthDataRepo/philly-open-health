@@ -42,13 +42,13 @@ A suggested Tag list will be presented, and the user can click on tags to add th
 Data Set Availability
 ------
 
-Data Sets should be available at fixed, reasonbly-brief URLs. These need not include a title, but Office of HIV Planning staff must be able to refer to, eg, "hivphilly.org/datarepo/datasets/3195". (The preceding is an example and not an actual or required URL path format)
+Data Sets should be available at fixed, reasonbly-brief URLs. These need not include a title, but Office of HIV Planning staff must be able to refer to, eg, "hivphilly.org/datarepo/datasets/3195". (That's an example and not an actual or required URL path format)
 
 Tags
 ====
-Question: Should we call these "categories?"
+Question: Should we call these "categories?" (Probably not)
 
-We might pre-seed the tags with section headers from the epi profile.
+We might pre-seed the tags with section headers from the epi-profile.
 
 Data Sources
 ======
@@ -82,6 +82,8 @@ A link in the navigation bar of Administrator accounts will link to a New User p
 
 Upon validation of the data input by the administrator, an auto-login link will be emailed directly to the email address provided. Upon logging in, the user will be prompted to create a secure password, which will be required for future log-ins. 
 
+(The precise workflow for registering new users doesn't necessarily have to be exactly that, if some part of it is troublesome to implement; the key element here is that Administrators have absolute control over new-user registration; there's no "create an account" option for the general public.)
+
 Dates
 ----
 
@@ -97,11 +99,12 @@ Users will be able to search for data sets. NEED TO WORK THIS OUT IN MORE DEPTH
 Development and Testing To-Do List:
 =======
 * Switch to Postgres from sqlite
-* Set up heroku and start deploying there regularly
+* Set up heroku and start deploying there regularly (This is done!)
 * Get a test data set and seed the test DB with it
 
 Eventually, to deploy For Real, we also need to:
 * Talk to OHP about hosting options - we might be constrained in our deployment strategy based on their needs or resources.
+
 
 Brainstorming and Possible Future Work
 ======
