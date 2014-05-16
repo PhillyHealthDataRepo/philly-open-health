@@ -1,0 +1,20 @@
+<p id="notice"> notice </p>
+
+<p>
+  <strong>Name:</strong>
+  = @source.name
+</p>
+
+<p>
+  <strong>Description:</strong>
+  = @source.description
+</p>
+
+<p>
+  <strong>Homepageurl:</strong>
+  = @source.homepageurl
+</p>
+  
+= link_to 'Edit', edit_source_path(@source)
+\|
+= link_to 'Back', sources_path
