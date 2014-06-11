@@ -25,3 +25,10 @@ u.confirmation_password = "yourpassword"
 u.save
 ```
 
+Then start the server:
+
+```
+rails s
+```
+
+The output will tell you where to point your browser. Usually this is "http://localhost:3000/"

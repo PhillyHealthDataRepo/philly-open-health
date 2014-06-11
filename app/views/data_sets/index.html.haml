@@ -16,10 +16,10 @@
       %td= data_set.createdate
       %td= link_to 'Show', data_set, class: "btn btn-default"
       %td= link_to 'Edit', edit_data_set_path(data_set), class: "btn btn-default"
-      %td= link_to 'Destroy', data_set, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: "btn btn-default btn-danger"
+      %td= link_to 'Destroy', data_set, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: "btn btn-danger"
 
 %br
 
 
-= link_to 'New Data set', new_data_set_path, class: "btn btn-default btn-info"
+= link_to 'New Data set', new_data_set_path, class: "btn btn-info"
 %br
