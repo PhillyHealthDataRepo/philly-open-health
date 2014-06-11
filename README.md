@@ -5,7 +5,13 @@ The Office of HIV Planning (OHP) writes an annual epidemiologic profile (or "epi
 Getting Started with Development
 ======
 
-**Note** We'll be moving to a better structure for project management soon, but in the meantime, please take a look at the requirements_notes.md in this directory for an overview of our 1.0-release feature goals.
+Please take a look at the requirements_notes.md in this directory for an overview of our 1.0-release feature goals.
+
+We're also doing some lightweight project management over at [Trello](https://trello.com/b/3MAHwl26/project-management) to keep track of what tasks are underway and who's working on them.
+
+
+Actually running the code
+=======
 
 Start by creating a user. In the terminal type:
 
