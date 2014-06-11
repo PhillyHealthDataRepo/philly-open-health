@@ -25,9 +25,10 @@ u.confirmation_password = "yourpassword"
 u.save
 ```
 
-Then start the server:
+Then seed the database, and start the server:
 
 ```
+rake db:seed
 rails s
 ```
 
