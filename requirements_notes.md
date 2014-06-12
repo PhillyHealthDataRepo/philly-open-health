@@ -98,18 +98,17 @@ Search
 
 Users will be able to search for data sets. NEED TO WORK THIS OUT IN MORE DEPTH
 
-Development and Testing To-Do List:
-=======
-* Switch to Postgres from sqlite
-* Set up heroku and start deploying there regularly (This is done!)
-* Get a test data set and seed the test DB with it
 
-Eventually, to deploy For Real, we also need to:
-* Talk to OHP about hosting options - we might be constrained in our deployment strategy based on their needs or resources.
+
 
 
 Brainstorming and Possible Future Work
 ======
+Eventually, to deploy For Real, we also need to:
+
+* Talk to OHP about hosting options - we might be constrained in our deployment strategy based on their needs or resources.
+
+
 Everything in this is *Not Yet Checked by OHP*
 
 * Right now, we're focused on making availble to the general public data that has no restrictions on its access - we specfiically *don't* want anything that has personally-identifiable information that could be traced back to an individual, because that would be HIPAA-violating as all get-out. But! What if we could add sections, limited by user access, that only trusted users (ie, members of the HIV services community?) have access to? We'd probably need to have specific additional limits on user accounts, since we might have public-health community users who aren't cleared for this specific data. 
