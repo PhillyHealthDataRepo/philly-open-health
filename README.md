@@ -15,7 +15,7 @@ rake db:migrate
 rails c
 u = User.new(email: "yourname@abc.com")
 u.password = "yourpassword"
-u.confirmation_password = "yourpassword"
+u.password_confirmation = "yourpassword"
 u.save
 ```
 
