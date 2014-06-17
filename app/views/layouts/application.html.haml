@@ -1,0 +1,27 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %title Philly Open Health
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+
+  %body
+    %nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          %button.navbar-toggle{"data-target" => "#main-nav", "data-toggle" => "collapse", :type => "button"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{:href => "/"} Philly Open Health
+        #main-nav.collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li{:class => "#{'active' if current_page?(data_sets_path)}"}= link_to 'Data sets', data_sets_path
+            %li{:class => "#{'active' if current_page?(sources_path)}"}= link_to 'Sources', sources_path
+            %li{:class => "#{'active' if current_page?(tags_path)}"}= link_to 'Tags', tags_path
+          %ul.nav.navbar-nav.navbar-right
+            %li.disabled= link_to 'Log In', '#'
+
+    = yield
