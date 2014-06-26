@@ -1,0 +1,24 @@
+<h1> Listing sources </h1>
+
+<table.table.table-striped>
+  <tr>
+    <th> Name </th>
+    <th> Description </th>
+    <th> URL </th>
+    <th></th>
+    <th></th>
+	<th></th>
+  </tr>
+  - @sources.each do |source|
+    <tr>
+      <td> source.name </td>
+      <td> source.description </td>
+      <td> source.homepageurl </td>
+      <td> link_to 'Show', source </td>
+      <td> link_to 'Edit', edit_source_path(source) </td>
+      <td> link_to 'Destroy', source, :method => :delete, :data => { :confirm => 'Are you sure?' } </td>
+  </tr>
+</table>
+<br></br>
+
+= link_to 'New Source', new_source_path
