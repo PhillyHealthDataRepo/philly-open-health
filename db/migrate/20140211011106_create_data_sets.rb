@@ -1,6 +1,6 @@
-class CreateDataSets < ActiveRecord::Migration
+class CreateDatasets < ActiveRecord::Migration
   def change
-    create_table :data_sets do |t|
+    create_table :datasets do |t|
       t.string :title
       t.text :description
       t.date :createdate
