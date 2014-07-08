@@ -1,0 +1,19 @@
+= form_for @dataset do |f|
+  - if @dataset.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@dataset.errors.count, "error")} prohibited this dataset from being saved:"
+      %ul
+        - @dataset.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :description
+    = f.text_area :description
+  .field
+    = f.label :createdate
+    = f.date_select :createdate
+  .actions
+    = f.submit 'Save', class: "btn btn-large btn-info"
