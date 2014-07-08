@@ -1,5 +1,6 @@
 class SourcesController < ApplicationController
-  before_action :set_source, only: [:show, :edit, :update, :destroy]
+  before_action :set_source, only: [:show, :destroy]
+  before_action :authorize, only: [:create, :edit, :update, :destroy]
 
   # GET /sources
   # GET /sources.json
@@ -10,6 +11,7 @@ class SourcesController < ApplicationController
   # GET /sources/1
   # GET /sources/1.json
   def show
+    @source = Source.find(set_source)
   end
 
   # GET /sources/new
@@ -19,6 +21,7 @@ class SourcesController < ApplicationController
 
   # GET /sources/1/edit
   def edit
+    @source = Source.find(set_source)
   end
 
   # POST /sources
@@ -40,6 +43,8 @@ class SourcesController < ApplicationController
   # PATCH/PUT /sources/1
   # PATCH/PUT /sources/1.json
   def update
+    @source = Source.find(set_source)
+    
     respond_to do |format|
       if @source.update(source_params)
         format.html { redirect_to @source, notice: 'Source was successfully updated.' }

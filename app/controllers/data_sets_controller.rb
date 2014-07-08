@@ -1,5 +1,6 @@
 class DataSetsController < ApplicationController
-  before_action :set_data_set, only: [:show, :edit, :update, :destroy]
+  before_action :set_data_set, only: [:destroy]
+  before_action :authorize, only: [:create, :edit, :update, :destroy]
 
   # GET /data_sets
   # GET /data_sets.json
@@ -10,6 +11,7 @@ class DataSetsController < ApplicationController
   # GET /data_sets/1
   # GET /data_sets/1.json
   def show
+    @data_set = DataSet.find(set_data_set)
   end
 
   # GET /data_sets/new
@@ -19,6 +21,7 @@ class DataSetsController < ApplicationController
 
   # GET /data_sets/1/edit
   def edit
+    @data_set = DataSet.find(set_data_set)
   end
 
   # POST /data_sets
@@ -40,14 +43,11 @@ class DataSetsController < ApplicationController
   # PATCH/PUT /data_sets/1
   # PATCH/PUT /data_sets/1.json
   def update
-    respond_to do |format|
-      if @data_set.update(data_set_params)
-        format.html { redirect_to @data_set, notice: 'Data set was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @data_set.errors, status: :unprocessable_entity }
-      end
+    @data_set = DataSet.find(set_data_set)
+    if @data_set.update_attributes(data_set_params)
+      redirect_to @data_set, notice: "Data Set has been updated."
+    else
+      render "edit"
     end
   end
 

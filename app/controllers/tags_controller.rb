@@ -1,5 +1,6 @@
 class TagsController < ApplicationController
-  before_action :set_tag, only: [:show, :edit, :update, :destroy]
+  before_action :set_tag, only: [:show, :destroy]
+  before_action :authorize, only: [:create, :edit, :update, :destroy]
 
   # GET /tags
   # GET /tags.json
@@ -10,6 +11,7 @@ class TagsController < ApplicationController
   # GET /tags/1
   # GET /tags/1.json
   def show
+    @tag = Tag.find(set_tag)
   end
 
   # GET /tags/new
@@ -19,6 +21,7 @@ class TagsController < ApplicationController
 
   # GET /tags/1/edit
   def edit
+    @tag = Tag.find(set_tag)
   end
 
   # POST /tags
@@ -40,6 +43,8 @@ class TagsController < ApplicationController
   # PATCH/PUT /tags/1
   # PATCH/PUT /tags/1.json
   def update
+    @tag = Tag.find(set_tag)
+
     respond_to do |format|
       if @tag.update(tag_params)
         format.html { redirect_to @tag, notice: 'Tag was successfully updated.' }

@@ -25,14 +25,14 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# To use ActiveModel has_secure_password
+gem 'bcrypt-ruby', '~> 3.1.5'
+
 
 #paperclip for file attachments
 gem 'paperclip', '~> 3.1'
 
 gem 'rails_admin'
-
-#devise for user management
-gem "devise"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -51,3 +51,5 @@ group :production do
 end
 
 gem 'bootstrap-sass', '~> 3.1.1'
+
+gem 'pry'
