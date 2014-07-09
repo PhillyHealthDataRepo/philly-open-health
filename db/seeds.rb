@@ -8,10 +8,10 @@
 
 #The following are just for easy demo purposes, and are not 'true' seed data. Newbie mode. :-)
 
-10.times do |n|
-    DataSet.create(title: "Test Document #{n}", description: "Test Doc #{n}", createdate: "2014-2-#{n}")    
+1.upto(10) do |n|
+    Dataset.create(title: "Test Document #{n}", description: "Test Doc #{n}", createdate: "2014-2-#{n}")    
 end
 
-10.times do |n|
+1.upto(10) do |n|
    Source.create(name: "Big Organization #{n}", description: "A nonprofit", homepageurl: "http://www.hivphilly.org") 
 end
