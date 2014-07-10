@@ -11,7 +11,7 @@ PhillyOpenHealth::Application.routes.draw do
   
   get "static_pages/home"
   get "static_pages/help"
-  resources :data_sets
+  resources :datasets
 
   resources :tags
 

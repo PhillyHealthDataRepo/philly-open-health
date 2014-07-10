@@ -1,9 +1,9 @@
-= form_for @data_set do |f|
-  - if @data_set.errors.any?
+= form_for @dataset do |f|
+  - if @dataset.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@data_set.errors.count, "error")} prohibited this data_set from being saved:"
+      %h2= "#{pluralize(@dataset.errors.count, "error")} prohibited this dataset from being saved:"
       %ul
-        - @data_set.errors.full_messages.each do |msg|
+        - @dataset.errors.full_messages.each do |msg|
           %li= msg
 
   .field

@@ -18,7 +18,7 @@
           %a.navbar-brand{:href => "/"} Philly Open Health
         #main-nav.collapse.navbar-collapse
           %ul.nav.navbar-nav
-            %li{:class => "#{'active' if current_page?(data_sets_path)}"}= link_to 'Data sets', data_sets_path
+            %li{:class => "#{'active' if current_page?(datasets_path)}"}= link_to 'Data sets', datasets_path
             %li{:class => "#{'active' if current_page?(sources_path)}"}= link_to 'Sources', sources_path
             %li{:class => "#{'active' if current_page?(tags_path)}"}= link_to 'Tags', tags_path
           %ul.nav.navbar-nav.navbar-right

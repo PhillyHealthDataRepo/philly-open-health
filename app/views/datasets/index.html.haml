@@ -1,0 +1,25 @@
+%h1 Listing datasets
+
+%table.table.table-striped
+  %tr
+    %th Title
+    %th Description
+    %th Createdate
+    %th
+    %th
+    %th
+
+  - @datasets.each do |dataset|
+    %tr
+      %td= dataset.title
+      %td= dataset.description
+      %td= dataset.createdate
+      %td= link_to 'Show', dataset, class: "btn btn-default"
+      %td= link_to 'Edit', edit_dataset_path(dataset), class: "btn btn-default"
+      %td= link_to 'Destroy', dataset, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: "btn btn-danger"
+
+%br
+
+
+= link_to 'New Data set', new_dataset_path, class: "btn btn-info"
+%br
