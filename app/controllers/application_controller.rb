@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
     redirect_to login_url, alert: "Not authorized" if current_user.nil?
   end
 
+  # Logs in the user.
   def login(user)
     @user = user
     if @user.save
