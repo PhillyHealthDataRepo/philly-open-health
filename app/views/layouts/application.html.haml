@@ -23,14 +23,14 @@
             %li{:class => "#{'active' if current_page?(tags_path)}"}= link_to 'Tags', tags_path
           %ul.nav.navbar-nav.navbar-right
             - if current_user
-              Logged in as #{current_user.email}.
-              = link_to "Log Out", logout_path
+              Signed in as #{current_user.email}.
+              = link_to "Sign Out", logout_path
             - else
               = link_to "Sign Up", signup_path
               or
-              \#{link_to "Log In", login_path}
+              \#{link_to "Sign In", login_path}
             
     - flash.each do |name, msg|
-      = content_tag :div, msg, id: "flash_#{name}"          
+      = content_tag :div, msg, id: "flash-#{name}"          
 
     = yield

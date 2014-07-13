@@ -7,6 +7,15 @@ class ApplicationController < ActionController::Base
     redirect_to login_url, alert: "Not authorized" if current_user.nil?
   end
 
+  def login(user)
+    @user = user
+    if @user.save
+      session[:user_id] = @user.id
+    else
+      render :new
+    end
+  end
+
   private
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]

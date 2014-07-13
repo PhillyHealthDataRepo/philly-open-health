@@ -1,21 +1,24 @@
 class SessionsController < ApplicationController
+
+  # GET /sessions/new
   def new
   end
 
+  # Creating a new session.. would that be a POST??
   def create
-    # require 'pry'; binding.pry
     @user = User.find_by_email(params[:email])
-    if @user && @user.authenticate(params[:password])
-        session[:user_id] = @user.id
-        redirect_to root_url, notice: "Logged in!"
+     if @user && @user.authenticate(params[:password])
+        login @user
+        redirect_to root_url, notice: "Signed in!"
     else
         flash.now.alert = "Email or password is invalid."
         render :new
     end
   end
 
+  # Delete current session
   def destroy
-    session[:user_id] = nil
-    redirect_to root_url, notice: "Logged out!"
+    reset_session
+    redirect_to root_url, notice: "Signed out!"
   end
 end
