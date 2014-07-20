@@ -26,7 +26,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.1.3'
 
 # To use ActiveModel has_secure_password
-gem 'bcrypt-ruby', '~> 3.1.5'
+gem 'bcrypt', '~> 3.1.5'
 
 gem 'rails_admin'
 
@@ -43,6 +43,14 @@ end
 
 group :development, :test do
     gem 'pry'
+    gem 'rspec-rails'
+    gem 'factory_girl_rails'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'launchy'
+  gem 'selenium-webdriver'
 end
 
 group :production do
