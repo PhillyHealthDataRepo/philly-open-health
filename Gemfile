@@ -30,15 +30,11 @@ gem 'bcrypt', '~> 3.1.5'
 
 gem 'rails_admin'
 
+gem 'pg', '0.17.1'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
-end
-
-group :development do
-    # NOT A PERMANENT SOLUTION! Should shift to postgres for dev asap
-    # Use sqlite3 as the database for Active Record
-    gem 'sqlite3', '1.3.8'
 end
 
 group :development, :test do
@@ -54,7 +50,6 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.17.1'
   gem 'rails_12factor', '0.0.2'
 end
 
