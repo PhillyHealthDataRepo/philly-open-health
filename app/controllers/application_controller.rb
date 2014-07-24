@@ -4,11 +4,11 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def authorize
-    redirect_to login_url, alert: "Not authorized" if current_user.nil?
+    redirect_to signin_url, alert: "Not authorized" if current_user.nil?
   end
 
   # Logs in the user.
-  def login(user)
+  def signin(user)
     @user = user
     if @user.save
       session[:user_id] = @user.id
