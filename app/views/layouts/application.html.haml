@@ -24,11 +24,11 @@
           %ul.nav.navbar-nav.navbar-right
             - if current_user
               Signed in as #{current_user.email}.
-              = link_to "Sign Out", logout_path
+              = link_to "Sign Out", signout_path
             - else
               = link_to "Sign Up", signup_path
               or
-              \#{link_to "Sign In", login_path}
+              \#{link_to "Sign In", signin_path}
             
     - flash.each do |name, msg|
       = content_tag :div, msg, id: "flash-#{name}"          
