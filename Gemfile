@@ -25,14 +25,14 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# To use ActiveModel has_secure_password
+gem 'bcrypt-ruby', '~> 3.1.5'
+
 
 #paperclip for file attachments
 gem 'paperclip', '~> 3.1'
 
 gem 'rails_admin'
-
-#devise for user management
-gem "devise"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -43,6 +43,10 @@ group :development do
     # NOT A PERMANENT SOLUTION! Should shift to postgres for dev asap
     # Use sqlite3 as the database for Active Record
     gem 'sqlite3', '1.3.8'
+end
+
+group :development, :test do
+    gem 'pry'
 end
 
 group :production do
