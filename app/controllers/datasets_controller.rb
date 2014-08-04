@@ -25,7 +25,7 @@ class DatasetsController < ApplicationController
     @dataset = Dataset.new(dataset_params)
 
     if @dataset.save
-      redirect_to @dataset, notice: 'Data set was successfully created.'
+      redirect_to @dataset, notice: 'Dataset was successfully created.'
     else
       render action: 'new'
     end
