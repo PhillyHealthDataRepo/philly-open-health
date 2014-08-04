@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    login @user
+    signin @user
     redirect_to root_url, notice: "Thank you for signing up!"
   end
 

@@ -1,8 +1,8 @@
 PhillyOpenHealth::Application.routes.draw do
   
   get 'signup', to: 'users#new', as: 'signup'
-  get 'login', to: 'sessions#new', as: 'login'
-  get 'logout', to: 'sessions#destroy', as: 'logout'
+  get 'signin', to: 'sessions#new', as: 'signin'
+  get 'signout', to: 'sessions#destroy', as: 'signout'
 
   resources :sessions
   resources :users
