@@ -6,4 +6,4 @@
 /log/*.log
 /tmp
 
-database.yml
+/config/database.yml
