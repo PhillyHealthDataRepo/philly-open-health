@@ -21,6 +21,7 @@ module PhillyOpenHealth
     # config.i18n.default_locale = :de
     
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+    config.filepicker_rails.api_key = "Asnisd69SSORtfrMdQ39Iz"
     
   end
 end

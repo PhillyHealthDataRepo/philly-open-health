@@ -32,6 +32,8 @@ gem 'rails_admin'
 
 gem 'pg', '0.17.1'
 
+gem 'filepicker-rails'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
