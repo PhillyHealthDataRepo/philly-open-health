@@ -10,6 +10,14 @@
   %b Creation date:
   = @dataset.createdate
 
+%div
+  @attachments.each do |attachment|
+  # create a div for each attachment name
+
+%div
+  # new attahcment form
+
+
 = link_to 'Edit', edit_dataset_path(@dataset)
 \|
 = link_to 'Back', datasets_path
