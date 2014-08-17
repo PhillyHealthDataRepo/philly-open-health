@@ -9,7 +9,6 @@ class DatasetsController < ApplicationController
 
   # GET /datasets/1
   def show
-    @attachments = Attachment.all
   end
 
   # GET /datasets/new
@@ -24,7 +23,6 @@ class DatasetsController < ApplicationController
   # POST /datasets
   def create
     @dataset = Dataset.new(dataset_params)
-
     if @dataset.save
       redirect_to @dataset, notice: 'Dataset was successfully created.'
     else
@@ -45,13 +43,6 @@ class DatasetsController < ApplicationController
   def destroy
     @dataset.destroy
     redirect_to datasets_url
-  end
-
-  def add_file
-    attachment = Attachment.new(params[:file])
-    if attachment.save
-      redirect_to :show
-    end
   end
 
   private

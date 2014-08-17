@@ -10,13 +10,15 @@
   %b Creation date:
   = @dataset.createdate
 
-%div
-  @attachments.each do |attachment|
-  # create a div for each attachment name
+= if @attachments
+  %p
+    %b Attachments:
+    = @attachments.each do |attachment|
+      %p attachment
 
-%div
-  # new attahcment form
-
+= form_for @attachment do |f|
+  = f.filepicker_field :url, dragdrop: true
+  = f.submit
 
 = link_to 'Edit', edit_dataset_path(@dataset)
 \|
