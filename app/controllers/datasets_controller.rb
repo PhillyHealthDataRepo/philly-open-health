@@ -9,6 +9,9 @@ class DatasetsController < ApplicationController
 
   # GET /datasets/1
   def show
+    @attachments = Attachment.all
+
+    @attachment = Attachment.new
   end
 
   # GET /datasets/new

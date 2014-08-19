@@ -1,4 +1,9 @@
 class AttachmentsController < ApplicationController
+
+  def index
+    @attachments = Attachment.all
+  end
+
   def new
     @attachment = Attachment.new
   end
@@ -6,9 +11,9 @@ class AttachmentsController < ApplicationController
   def create
     @attachment = Attachment.new
     if @attachment.save
-      redirect_to :controller => 'dataset', :action => 'show'
+      redirect_to controller: "dataset", action: "show"
     else
-      render action: 'new'
+      render action: "new"
     end
   end
 
