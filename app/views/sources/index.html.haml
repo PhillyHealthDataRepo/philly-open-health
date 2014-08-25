@@ -15,8 +15,9 @@
       %td= source.description
       %td= source.homepageurl
       %td= link_to 'Show', source
-      %td= link_to 'Edit', edit_source_path(source)
-      %td= link_to 'Destroy', source, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %td= link_to 'Edit', edit_source_path(source), class: "btn btn-default"
+      %td= link_to 'Destroy', source, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: "btn btn-danger"
 
 
-= link_to 'New Source', new_source_path
+= link_to 'New Source', new_source_path, class: "btn btn-info"
+

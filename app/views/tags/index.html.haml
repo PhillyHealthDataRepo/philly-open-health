@@ -11,8 +11,8 @@
     %tr
       %td= tag.name
       %td= link_to 'Show', tag
-      %td= link_to 'Edit', edit_tag_path(tag)
-      %td= link_to 'Destroy', tag, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %td= link_to 'Edit', edit_tag_path(tag), class: "btn btn-default"
+      %td= link_to 'Destroy', tag, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: "btn btn-danger"
 
 
-= link_to 'New Tag', new_tag_path
+= link_to 'New Tag', new_tag_path, class: "btn btn-info"
