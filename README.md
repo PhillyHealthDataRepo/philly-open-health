@@ -7,7 +7,7 @@ Getting Started with Development!
 
 Please take a look at the requirements_notes.md in this directory for an overview of our 1.0-release feature goals.
 
-bit.ly/1KzEXOs
+You can view the first batch of files on Dropbox [here](http://bit.ly/1KzEXOs).
 
 We're also doing some lightweight project management over at [Trello](https://trello.com/b/3MAHwl26/project-management) to keep track of what tasks are underway and who's working on them.
 
@@ -15,7 +15,11 @@ We're also doing some lightweight project management over at [Trello](https://tr
 Actually running the code!
 =======
 
-Start by creating a user. In the terminal type:
+Start by copying the `config/database.example.yml` file over to `config/database.yml`.
+
+Next, if you're on a Mac, make sure you have a Postgres server running locally (dowloading the app is probably your best bet).
+
+Then create a user. In the terminal type:
 
 ```
 rake db:migrate
