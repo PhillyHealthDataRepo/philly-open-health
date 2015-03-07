@@ -7,6 +7,8 @@ Getting Started with Development!
 
 Please take a look at the requirements_notes.md in this directory for an overview of our 1.0-release feature goals.
 
+bit.ly/1KzEXOs
+
 We're also doing some lightweight project management over at [Trello](https://trello.com/b/3MAHwl26/project-management) to keep track of what tasks are underway and who's working on them.
 
 
