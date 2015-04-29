@@ -66,5 +66,4 @@ bundle exec annotate --exclude tests,fixtures,factories,serializers
 
 ## Running tests ##
 
-To run tests with Spring preloading, use `bin/rspec` or
-`bin/cucumber`.
+To run tests with Spring preloading, use `bin/rspec`.

@@ -40,7 +40,6 @@ end
 group :development do
   gem 'spring'
   gem 'spring-commands-rspec'
-  gem 'spring-commands-cucumber'
 end  
 
 group :development, :test do
@@ -52,8 +51,7 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'cucumber-rails', require: false
-  gem 'database_cleaner' # for use with cucumber
+  gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers', require: false
