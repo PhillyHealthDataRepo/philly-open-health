@@ -6,6 +6,8 @@ development: &default
   username: 
   password:
 
-test:
+test: &test
   <<: *default
   database: philly-open-health_test
+cucumber:
+  <<: *test

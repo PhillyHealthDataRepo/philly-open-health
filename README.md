@@ -41,3 +41,30 @@ rails s
 ```
 
 The output will tell you where to point your browser. Usually this is "http://localhost:3000/"
+
+If you get the following error
+
+```
+ActiveRecord::NoDatabaseError: FATAL:  database "philly-open-health_development" does not exist
+```
+
+Make sure to create the database first. Run
+
+```
+bin/rake db:create db:migrate
+```
+
+to create the database.
+
+## Annotating models ##
+
+To annotate the models, run
+
+```
+bundle exec annotate --exclude tests,fixtures,factories,serializers
+```
+
+## Running tests ##
+
+To run tests with Spring preloading, use `bin/rspec` or
+`bin/cucumber`.
