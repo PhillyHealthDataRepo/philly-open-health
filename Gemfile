@@ -14,7 +14,7 @@ gem 'uglifier', '>= 2.5.3'
 gem 'coffee-rails', '~> 4.0.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer' # , platforms: :ruby
 gem 'haml-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -37,16 +37,24 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development do
+  gem 'spring'
+  gem 'spring-commands-rspec'
+end  
+
 group :development, :test do
-    gem 'pry'
-    gem 'rspec-rails'
-    gem 'factory_girl_rails'
+  gem 'annotate'
+  gem 'factory_girl_rails'
+  gem 'pry'
+  gem 'rspec-rails'
 end
 
 group :test do
   gem 'capybara'
+  gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'
+  gem 'shoulda-matchers', require: false
 end
 
 group :production do
