@@ -4,18 +4,17 @@ PhillyOpenHealth::Application.routes.draw do
   get 'signin', to: 'sessions#new', as: 'signin'
   get 'signout', to: 'sessions#destroy', as: 'signout'
 
-  resources :sessions
-  resources :users
-
   root 'static_pages#home'
   
   get "static_pages/home"
   get "static_pages/help"
-  resources :datasets
 
+  resources :sessions
+  resources :users
   resources :tags
-
   resources :sources
+  resources :datasets
+  resources :attachments
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   # The priority is based upon order of creation: first created -> highest priority.

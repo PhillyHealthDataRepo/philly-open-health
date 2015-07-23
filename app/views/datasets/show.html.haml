@@ -10,6 +10,16 @@
   %b Creation date:
   = @dataset.createdate
 
+= if @attachments
+  %p
+    %b Attachments:
+    = @attachments.each do |attachment|
+      %p= attachment.to_s
+
+= form_for @attachment do |f|
+  = f.filepicker_field :id, dragdrop: true
+  = f.submit
+
 = link_to 'Edit', edit_dataset_path(@dataset)
 \|
 = link_to 'Back', datasets_path

@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.1.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -32,6 +32,8 @@ gem 'rails_admin'
 
 gem 'pg', '0.17.1'
 
+gem 'filepicker-rails'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -40,7 +42,7 @@ end
 group :development do
   gem 'spring'
   gem 'spring-commands-rspec'
-end  
+end
 
 group :development, :test do
   gem 'annotate'
