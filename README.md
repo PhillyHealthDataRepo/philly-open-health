@@ -9,6 +9,19 @@ Getting Started with Development!
 
 Please take a look at the requirements_notes.md in this directory for an overview of our 1.0-release feature goals.
 
+Minimum Viable Product:
+* Documents have:
+  * Title
+  * Description
+  * Date Collected 
+  * Date Published
+  * Tags
+    * Basic level of suggestion to prevent tag explosion
+  * Source (who did this - can be just a text field MVP)
+  * 1 or more files
+* Files can be uploaded only by users
+* Users can only be created by an existing admin user
+
 You can view the first batch of files on Dropbox [here](http://bit.ly/1KzEXOs). Metadata for these files is being compiled in a Google Sheet [here](https://docs.google.com/spreadsheets/d/1Npc4yPKKp8UGPvtqGuFqbpsZq5eMMKH2zyyceeKO2wA/edit?usp=sharing).
 
 We're also doing some lightweight project management over at [Trello](https://trello.com/b/3MAHwl26/project-management) to keep track of what tasks are underway and who's working on them.
