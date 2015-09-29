@@ -10,11 +10,11 @@
   %b Creation date:
   = @dataset.createdate
 
-= if @attachments
+- if @attachments
   %p
     %b Attachments:
     = @attachments.each do |attachment|
-      %p= attachment.to_s
+      %p = attachment.to_s
 
 = form_for @attachment do |f|
   = f.filepicker_field :id, dragdrop: true
